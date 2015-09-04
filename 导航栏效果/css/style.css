@@ -1,0 +1,86 @@
+html{
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+  min-width: 320px;
+  font-size: 1.6rem;
+  font-family: 'Open Sans','Helvetica Neue',Arial, "Microsoft YaHei","SimHei","SimSun",sans-serif;
+  color: #2c343b;
+  background-color: #fff;
+  overflow-y: hidden;
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+
+header{
+	position: fixed;
+	z-index: 300;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #282828;
+	opacity: 0.7;
+}
+.logo{
+	position: absolute;
+	left: 5%;
+	float: left;
+	color: #fff;
+}
+.logo h1{
+	font-size: 2rem;
+}
+
+nav{
+	position: absolute;
+	right: 5%;
+}
+nav a{
+	position: relative;
+	display: inline-block;
+	padding: 0 20px;
+	color: #F3F3F5;
+	text-align: center;
+}
+nav a:active{
+	background-color: #4E5359;
+}
+.underLine{
+	position: absolute;
+	top: 37px;
+	left: 10px;
+	width: 52px;
+	height: 3px;
+	border-style: solid;
+	border-bottom-width: 3px;
+	border-color: #F3F3F5;
+}
+.main{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.contents{
+	height: 100%;
+	width: 100%;
+	background-color: #EEE;
+}
+#home{
+	background-color: #EEE;
+}
+#animation{
+	background-color: #BBB;
+}
+#movie{
+	background-color: #CCC;
+}
+#game{
+	background-color: #DDD;
+}
