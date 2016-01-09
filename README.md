@@ -12,4 +12,4 @@ DEMO
 ### glass 
 CSS3实现的毛玻璃效果，codepen上项目临摹
 [Demo](http://d12mnit.github.io/Cherming/glass/index.html)
-已失效 。（可能由于webkit更新支持改变）
+之前是没有问题的，但是目前版本的chrome打开后，毛玻璃效果不显现，需要将contents的padding取消并重新添加才会有效果，不知道是不是bug
