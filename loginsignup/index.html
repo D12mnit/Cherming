@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="static/index/style.css">
+  <link rel="stylesheet" href="assets/tipstool/tip-yellowsimple/tip-yellowsimple.css">
+  <!-- Resource Style -->
+  <title>零度贴吧</title>
+</head>
+<body>
+  <div class="main-index">
+    <div class="main-content">
+      <div class="content-header">
+        <h1 class="logo">零度贴吧</h1>
+        <h2 class="subtitle">与同伴分享你奇奇怪怪的想法</h2>
+      </div>
+      <div class="content-wrapper">
+        <div class="tabbar">
+          <a class="selected" href="#signup">注册</a>
+          <a class="" href="#login">登录</a>
+          <span class="underline left"></span>
+        </div>
+        <div class="hideanchor" id="signup"></div>
+        <div class="hideanchor" id="login"></div>
+        <div class="view signup-wrapper is-visible animate">
+          <form class="signup-bar">
+            <p class="input-wrapper">
+              <input type="text" name="name" id="name" placeholder="姓名" autocomplete="off" title="请输入姓名,少于16个字符">
+            </p>
+            <p class="input-wrapper">
+              <input type="password" name="password" id="password" placeholder="密码" autocomplete="off" title="6~16个字符，区分大小写，并且需为字母开头">
+            </p>
+            <div class="input-wrapper radio-wrapper">
+              <ul>
+                <li>
+                  <label for="male">男</label>
+                  <input type="radio" name="sex" id="male" value="male"checked="checked"></li>
+                <li>
+                  <label for="female">女</label>
+                  <input type="radio" name="sex" id="female" value="female">
+                </li>
+              </ul>
+            </div>
+            <p class="input-wrapper">
+              <input type="text" name="major" id="major" placeholder="专业" autocomplete="off">
+            </p>
+            <p class="input-wrapper">
+              <input type="text" name="cellphone" id="cellphone" placeholder="手机号" autocomplete="off">
+            </p>
+          </form>
+          <a class="form-btn" id="signup-btn" href="javascript:void(0);">注册贴吧</a>
+        </div>
+        <div class="view login-wrapper animate">
+          <form class="login-bar">
+            <p class="input-wrapper">
+              <input type="text" name="name" id="lname" placeholder="手机号/用户名" required>
+            </p>
+            <p class="input-wrapper">
+              <input type="password" name="password" id="lpassword" placeholder="密码" required>
+            </p>
+          </form>
+          <a class="form-btn" id="login-btn" href="javascript:void(0);">登录</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="particles-js">
+  </div>
+
+<script src="assets/seajs/sea.js"></script>
+<script>
+  seajs.config({
+    base: "./assets/",
+    alias: {
+      "jquery": "jquery/jquery-2.1.4.min",
+      "particles": "particles/particles.min",
+      "poshytip": "tipstool/jquery.poshytip"
+    }
+  })
+  seajs.use("./static/index/main");
+</script>
+<!-- Javascript src -->
+</body>
+</html>

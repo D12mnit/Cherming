@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: Helvetica, "Xhei OSX", Arial, sans-serif;
+  height: 100%;
+  min-width: 768px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  font-family: Helvetica, Arial, 'Microsoft YaHei', sans-serif;
+}
+
+.main-header {
+  position: fixed;
+  height: 61px;
+  width: 100%;
+  z-index: 3;
+  line-height: 61px;
+  padding: 0 3rem;
+  background-color: #ddd;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.main-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 61px;
+  padding-left: 460px;
+  line-height: 1.5;
+}
+
+.task-category {
+  margin-left: -460px;
+  background-color: #f2f2f2;
+}
+
+.task-list {
+  margin-left: -230px;
+  background-color: #fff;
+}
+
+.task-list,
+.task-category {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 230px;
+  border-right: 1px solid #ccc;
+}
+
+.task-detail {
+  position: relative;
+  height: 100%;
+}
+
+.task-category .head {
+  height: 40px;
+  padding: 18px 10px 0;
+  background-color: #f2f2f2;
+}
+
+.task-category .categorylist {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  bottom: 40px;
+  overflow: auto;
+}
+
+.categorylist .title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 7px 10px;
+}
+
+.categorylist .title.selected {
+  background-color: #fff;
+}
+
+.category-name {
+  display: block;
+  width: 100%;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.delete {
+  display: none;
+  float: right;
+  margin-right: 10px;
+}
+
+.active .level-2 {
+  display: block;
+}
+
+.level-2 {
+  display: none;
+}
+
+.level-2 .category-name {
+  padding-left: 60px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.category-name.selected {
+  background-color: #fff;
+}
+
+.category-name:hover {
+  background-color: #fff;
+}
+
+.category-name:hover .delete {
+  display: block;
+}
+
+.new-tasklist,
+.new-task {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.new-task:hover,
+.new-tasklist:hover {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, .6);
+}
+
+.task-list .title {
+  height: 40px;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-list .title li {
+  display: inline-block;
+  margin-top: 7px;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.task-list .title li:first-of-type {
+  margin-left: 10px;
+}
+
+.task-list .title li.selected {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.main-list {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  width: 100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 30px;
+  overflow: auto;
+}
+
+.date-list .task-date {
+  display: block;
+  padding-left: 20px;
+  background-color: #fafaee;
+}
+
+.task-date {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.date-list .task-name {
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.task-name:hover .delete {
+  display: block;
+  color: #000;
+}
+
+.task-name.finished {
+  color: #39801a;
+}
+
+.task-name.selected {
+  background-color: #f2f2f2;
+}
+
+.task-content,
+.task-edit {
+  height: 100%;
+}
+
+.task-content .task-title,
+.task-edit .task-title {
+  height: 60px;
+  background-color: #f2f2f2;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 60px;
+}
+
+.task-edit .task-title,
+.task-edit .task-date,
+.task-content .title,
+.task-content .date {
+  padding: 0 15px;
+}
+
+.task-btn {
+  float: right;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 0 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-transition: transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+}
+
+.task-btn.finished {
+  display: none;
+}
+
+.task-btn:hover {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.task-edit .task-date,
+.task-content .task-date {
+  height: 60px;
+  background-color: #fafaee;
+  line-height: 60px;
+}
+
+.task-edit .task-date,
+.task-edit .task-title,
+.task-content .task-date,
+.task-content .task-title {
+  border-bottom: 1px solid #ccc;
+}
+
+.task-content article,
+.task-edit article {
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.task-edit .header-edit {
+  height: 50px;
+  width: calc(100% - 124px);
+  font-size: 16px;
+  font-size: 1.6rem;
+  border: none;
+  background-color: transparent;
+}
+
+.task-edit .header-edit:focus {
+  outline: none;
+}
+
+#content-edit {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  font-size: 16px;
+}
+
+#content-edit:focus {
+  outline: none;
+}

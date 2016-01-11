@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Resource Style -->
+  <title>ToDo</title>
+</head>
+<body> 
+  <header class="main-header">
+    GTD Tool
+  </header>
+  <div class="main-wrapper">
+    <div class="task-category">
+      <header class="head">
+        所有任务(
+        <span class='count' id='task-count'>
+          3
+        </span>
+        )
+      </header>
+      <section class="categorylist">
+        <h4 class="title">分类列表</h4>
+        <ul class="category">
+        </ul>
+      </section>
+      <footer class="new-tasklist">
+        新增分类
+      </footer>
+    </div>
+    <div class="task-list">
+      <header class="head">
+        <ul class="title">
+          <li class="selected">所有</li>
+          <li>未完成</li>
+          <li>已完成</li>
+        </ul>
+      </header>
+      <section class="main-list">
+        <div class="date-list" data-taskdate="2015-11-28">
+          <span class="task-date">2015-11-28</span>
+          <ul>
+            <li class="task-name finished" data-taskid="1">to-do-1<span class="delete">X</span></li>
+            <li class="task-name selected" data-taskid="2">to-do-2<span class="delete">X</span></li>
+          </ul>
+        </div>
+        <div class="date-list" data-taskdate="2015-11-27">
+          <span class="task-date">2015-11-27</span>
+          <ul>
+            <li class="task-name" data-taskid="1">to-do-1<span class="delete">X</span></li>
+            <li class="task-name" data-taskid="2">to-do-2<span class="delete">X</span></li>
+          </ul>
+        </div>
+        <div class="date-list" data-taskdate="2015-11-26">
+          <span class="task-date">2015-11-26</span>
+          <ul>
+            <li class="task-name" data-taskid="1">to-do-1<span class="delete">X</span></li>
+            <li class="task-name" data-taskid="2">to-do-2<span class="delete">X</span></li>
+          </ul>
+        </div>
+      </section>
+      <footer class="new-task">
+        新增任务
+      </footer>
+    </div>
+    <div class="task-detail">
+      <div class="task-content">
+        <header class="task-title">
+          <p class="title">
+            <span class="title-value" id="title-value">to-do-2</span>
+            <span class="task-btn finish-btn" id="complete-btn">完成</span>
+            <span class="task-btn edit-btn">编辑</span>
+          </p>
+        </header>
+        <section class="task-date">
+          <p class="date">
+            任务日期: <span class="load-date">2015-11-28</span>
+          </p>
+        </section>
+        <article class="text-content">
+          测试
+        </article>
+      </div>
+      <div class="task-edit">
+        <header class="task-title">
+          <input type="text" class="header-edit" id="title-value" placeholder="请输入标题">
+          <span class="task-btn finish-btn" id="cancel-btn">取消</span>
+          <span class="task-btn finish-btn" id="submit-btn">提交</span>
+        </header>
+        <section class="task-date">
+          <input type="text" class="header-edit" id="date-value" placeholder="请输入日期:格式2015-11-28">
+        </section>
+        <article class="text-content">
+          <textarea name="content" id="content-edit"></textarea>
+        </article>
+      </div>
+    </div>
+  </div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/model.js"></script>
+<!-- Javascript src -->
+</body>
+</html>
