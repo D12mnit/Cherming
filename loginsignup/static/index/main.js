@@ -55,6 +55,7 @@ define(function(require){
             break;
           case 'cellphone':
             /^1[\d]{10}$/.test(values)?$(this).css('box-shadow', 'inset 0 0 5px rgb(255, 255, 255)'):$(this).css('box-shadow', 'inset 0 0 5px rgb(255, 0, 0)');
+            break;
           default:
             values.length ? $(this).css('box-shadow', 'inset 0 0 5px rgb(255, 255, 255)'):$(this).css('box-shadow', 'inset 0 0 5px rgb(255, 0, 0)');
         }
