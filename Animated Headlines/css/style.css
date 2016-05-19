@@ -1,0 +1,71 @@
+html {
+  font-style: 62.5%
+}
+body {
+  font-size: 1.6rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, "PingFang SC", "STXiHei", "Microsoft YaHei", sans-serif;
+  color: #aebcb9;
+  background-color: #0d0d0d;
+  -webkit-font-smoothing: antialiased
+}
+a {
+  text-decoration: none
+}
+main {
+  text-align: center
+}
+main span {
+  font-size: 3.2rem
+}
+
+@media screen and (max-width: 800px){
+  main span{
+    font-size: 1.2rem;
+  }
+}
+.words-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+  -webkit-animation: flash 1s both 1s infinite;
+  -o-animation: flash 1s both 1s infinite;
+  animation: flash 1s both 1s infinite
+}
+@-webkit-keyframes flash {
+  from {
+    border-right: 1px solid transparent
+  }
+  to {
+    border-right: 1px solid #fff
+  }
+}
+@-o-keyframes flash {
+  from {
+    border-right: 1px solid transparent
+  }
+  to {
+    border-right: 1px solid #fff
+  }
+}
+@-moz-keyframes flash {
+  from {
+    border-right: 1px solid transparent
+  }
+  to {
+    border-right: 1px solid #fff
+  }
+}
+@keyframes flash {
+  from {
+    border-right: 1px solid transparent
+  }
+  to {
+    border-right: 1px solid #fff
+  }
+}
